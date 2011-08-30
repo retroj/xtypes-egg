@@ -40,9 +40,13 @@
   (unsigned-short width xrectangle-width xrectangle-width-set!)
   (unsigned-short height xrectangle-height xrectangle-height-set!))
 
-(define (make-xrectangle)
+(define (make-xrectangle x y width height)
   (let ((r (%make-xrectangle)))
     (set-finalizer! r %free-xrectangle)
+    (xrectangle-x-set! r x)
+    (xrectangle-y-set! r y)
+    (xrectangle-width-set! r width)
+    (xrectangle-height-set! r height)
     r))
 
 
