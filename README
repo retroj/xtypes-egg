@@ -1,18 +1,22 @@
 == Description
 
-I made this library because I was writing a program that used both xlib
-and xft, and needed certain datatypes that on the one hand behaved like
-ordinary scheme objects, and on the other would interoperate with these
-two libraries.  The xlib egg is unfortunately a minimal wrapper around C,
-and does not provide certain needed abstractions over its datatypes — they
-are for the most part opaque c-pointers.
+Xtypes provides scheme bindings for common datatypes used in xlib
+programming.  This egg is meant to be used mainly in conjunction with the
+xlib egg, as a convenience, because it exposes these various datatypes as
+high level scheme objects rather than opaque c-pointers.  Objects created
+by the make-* constructors here all have finalizers for automatic garbage
+collecting.
 
 This library has been developed on an as-needed basis, rather than a
-methodical one.  If there are more datatypes that this library should
-handle, please let me know.
+methodical one.  There are possibly many more datatypes that would be the
+proper domain of this library to handle, and I will add those as they are
+reported to me, or as need arises in my own work with xlib.
 
-Objects instantiated by the make-* constructors in this library have
-finalizers set on them, so they will be automatically garbage-collected.
+=== Datatypes
+
+* XGlyphInfo
+* XRectangle
+* XRenderColor
 
 
 == Authors
