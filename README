@@ -5,7 +5,7 @@ and xft, and needed certain datatypes that on the one hand behaved like
 ordinary scheme objects, and on the other would interoperate with these
 two libraries.  The xlib egg is unfortunately a minimal wrapper around C,
 and does not provide certain needed abstractions over its datatypes — they
-are more the most part opaque c-pointers.
+are for the most part opaque c-pointers.
 
 This library has been developed on an as-needed basis, rather than a
 methodical one.  If there are more datatypes that this library should
