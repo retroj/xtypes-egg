@@ -1,7 +1,7 @@
 ;; -*- scheme -*-
 
-(run (csc xtypes.scm -j xtypes -s -O2 -d0 -L "\"-L/usr/X11R6/lib -lX11\"" -C "\"-I/usr/X11R6/include\""))
-(run (csc xtypes.import.scm -s -O2 -d0))
+(compile xtypes.scm -j xtypes -s -O2 -d0 -L "\"-L/usr/X11R6/lib -lX11\"" -C "\"-I/usr/X11R6/include\"")
+(compile xtypes.import.scm -s -O2 -d0)
 
 (install-extension
  'xtypes
