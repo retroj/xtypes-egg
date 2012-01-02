@@ -6,4 +6,4 @@
 (install-extension
  'xtypes
  '("xtypes.so" "xtypes.import.so")
- '((version 0.1)))
+ '((version 0.1a)))
