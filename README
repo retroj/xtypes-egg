@@ -9,8 +9,8 @@ collecting.
 
 This library has been developed on an as-needed basis, rather than a
 methodical one.  There are possibly many more datatypes that would be the
-proper domain of this library to handle, and I will add those as they are
-reported to me, or as need arises in my own work with xlib.
+proper domain of this library to handle, and those can be added as they
+are reported to me, or as need arises in my own work with xlib.
 
 === Datatypes
 
@@ -32,8 +32,8 @@ reported to me, or as need arises in my own work with xlib.
 
 === C headers
 
-* X11 development headers (libx11-dev on debian)
-* XRender development headers (libxrender-dev on debian)
+* X11 development headers (libx11-dev)
+* XRender development headers (libxrender-dev)
 
 
 == API
