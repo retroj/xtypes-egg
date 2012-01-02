@@ -5,5 +5,4 @@
  (needs foreigners miscmacros)
  (test-depends simple-sha1 test)
  (author "John J. Foerch")
- (synopsis "Bindings for datatypes used by Xlib")
- (files "xtypes.meta" "xtypes.setup" "xtypes.scm"))
+ (synopsis "Bindings for datatypes used by Xlib"))
