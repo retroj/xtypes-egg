@@ -27,7 +27,6 @@ are reported to me, or as need arises in my own work with xlib.
 == Requirements
 === Chicken eggs
 
-* [[foreign]]
 * [[foreigners]]
 
 === C headers
