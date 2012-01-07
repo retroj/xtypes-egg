@@ -1,3 +1,4 @@
-(repo git "git://github.com/retroj/{egg-name}.git")
-(uri targz "https://github.com/retroj/{egg-name}/tarball/{egg-release}")
+(repo git "git://github.com/retroj/xtypes-egg.git")
+(uri targz "https://github.com/retroj/xtypes-egg/tarball/{egg-release}")
 (release "0.1a")
+(release "0.1a1")
