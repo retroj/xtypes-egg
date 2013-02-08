@@ -30,6 +30,7 @@
          xrectangle-width xrectangle-height
          xrectangle-x-set! xrectangle-y-set!
          xrectangle-width-set! xrectangle-height-set!
+         xrectangle->string
 
          make-xglyphinfo xglyphinfo-x xglyphinfo-y xglyphinfo-width
          xglyphinfo-height xglyphinfo-xoff xglyphinfo-yoff
@@ -73,6 +74,16 @@
     (xrectangle-width-set! r width)
     (xrectangle-height-set! r height)
     r))
+
+(define (xrectangle->string rect)
+  (let ((x (xrectangle-x rect))
+        (y (xrectangle-y rect))
+        (width (xrectangle-width rect))
+        (height (xrectangle-height rect)))
+    (sprintf "#<xrectangle ~Ax~A~A~A~A~A>"
+             width height
+             (if (< x 0) "" "+") x
+             (if (< y 0) "" "+") y)))
 
 
 ;;;
