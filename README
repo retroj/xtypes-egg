@@ -47,6 +47,7 @@ are reported to me, or as need arises in my own work with xlib.
 <procedure>(xrectangle-y-set! rect y)</procedure>
 <procedure>(xrectangle-width-set! rect width)</procedure>
 <procedure>(xrectangle-height-set! rect height)</procedure>
+<procedure>(xrectangle->string rect)</procedure>
 
 Some of these procedures have the same names as procedures in the xlib
 egg, so if you are using xtypes and xlib together, you should change your
@@ -97,3 +98,4 @@ BSD
 == Version History
 
 * 0.1a (January 2, 2012) initial release
+* 0.1a2 (February 7, 2013) added xrectangle->string

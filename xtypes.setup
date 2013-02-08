@@ -1,9 +1,11 @@
 ;; -*- scheme -*-
 
-(compile xtypes.scm -j xtypes -s -O2 -d0 -L "\"-L/usr/X11R6/lib -lX11\"" -C "\"-I/usr/X11R6/include\"")
+(compile xtypes.scm -j xtypes -s -O2 -d0
+         -L "\"-L/usr/X11R6/lib -lX11\""
+         -C "\"-I/usr/X11R6/include\"")
 (compile xtypes.import.scm -s -O2 -d0)
 
 (install-extension
  'xtypes
  '("xtypes.so" "xtypes.import.so")
- '((version 0.1a)))
+ '((version 0.1a2)))
